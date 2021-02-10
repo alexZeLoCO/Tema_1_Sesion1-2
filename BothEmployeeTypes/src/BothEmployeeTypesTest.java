@@ -35,6 +35,26 @@ public class BothEmployeeTypesTest {
 	    	  System.out.print("Highest net earnings employee from vector does not have Base earnings: \n \n" + vectorComm[maxEmployeeIdx].toString());
 	      }
 
+	      System.out.println("\n");
+	      
+	      int i=0;
+	      int j=0;
+	
+	      while (i<vectorComm.length && j<vectorBase.length) {
+	    	  if (vectorComm[i].earnings()<vectorBase[j].earnings()) {
+	    		  System.out.print(vectorComm[i++]);
+	    	  } else {
+	    		  System.out.print(vectorBase[j++]);
+	    	  }
+	      }
+	      
+	      while (i<vectorComm.length) {
+	    	  System.out.print(vectorComm[i++]);
+	    	  }
+	      while (j<vectorBase.length) {
+	    	  System.out.print(vectorBase[j++]);
+	      }
+	
 	}
 
 }

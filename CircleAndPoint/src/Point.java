@@ -25,7 +25,7 @@ public class Point {
 		return y;
 	}
 	
-	public double distance (Point A, Point B) {
+	public static double distance (Point A, Point B) {
 		return (Math.sqrt((double)Math.pow(A.getX()-B.getX(),2)+(double)Math.pow(A.getY()-B.getY(),2)));
 	}
 	
@@ -33,4 +33,6 @@ public class Point {
 	public String toString() {
 		return String.format("Point: /n /t X coordinate: %d \n \t Y coordinate: %d.", getX(),getY());
 	}
+	
+	
 }
